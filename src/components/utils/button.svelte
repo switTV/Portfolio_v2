@@ -1,6 +1,7 @@
 <script lang="ts">
     export let width_button:Number
     export let text_button:string
+    export let direction_button:string
 </script>
 
 <style>
@@ -24,5 +25,5 @@
 <!-- markup (zero or more items) goes here -->
 
 <div class="Button_section">
-    <a href="#" style="width: {width_button}px;">{text_button}</a>
+    <a href="{direction_button}" style="width: {width_button}px;">{text_button}</a>
 </div>

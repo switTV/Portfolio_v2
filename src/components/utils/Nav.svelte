@@ -7,7 +7,7 @@
 <div class="Header">
     <div class="Header-left-section">
         <a href="#">About Me</a>
-        <a href="#">Proyectos</a>
+        <a href="/projects">Proyectos</a>
     </div>
     <div class="Header-center-section">
         <svg

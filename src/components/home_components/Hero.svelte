@@ -1,5 +1,5 @@
 <script lang="ts">
-    import img_hero from "../assets/img-hero.png"
+    import img_hero from "../../assets/img-hero.png"
 
     let mouseX = 0
     let mouseY = 0
