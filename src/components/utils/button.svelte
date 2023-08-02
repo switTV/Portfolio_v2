@@ -10,15 +10,20 @@
         height: 60px;
         display: block;
         border-radius: 10px;
-
+        
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         font-family: "Montserrat";
         color: #1768AC;
         text-decoration: none;
-
+        
+    }
+    
+    .Button_section a:hover {
+        transition: border 0.2s ;
+        border: 3px #1282A2 solid;
     }
 </style>
 

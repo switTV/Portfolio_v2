@@ -1,6 +1,6 @@
 <script>
     import Hero from "../../components/home_components/Hero.svelte";
-    import Button from "../../components/utils/button.svelte";
+    import Button from "../../components/utils/Button.svelte";
 
     let width_button = 470
     let text_button = "Proyectos"

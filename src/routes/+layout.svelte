@@ -1,9 +1,24 @@
 <script lang="ts">
-    import type { LayoutData } from './$types';
-    import Nav from '../components/utils/Nav.svelte';
-    
+    import type { LayoutData } from "./$types";
+    import { fade } from "svelte/transition";
+    import Nav from "../components/utils/Nav.svelte";
+
     export let data: LayoutData;
 </script>
+
+<div class="container">
+    <div class="main-container">
+        <Nav />
+
+        <main>
+            {#key data.url}
+                <div in:fade={{duration: 200}}>
+                    <slot />
+                </div>
+            {/key}
+        </main>
+    </div>
+</div>
 
 <style>
     :global(*) {
@@ -22,9 +37,3 @@
         width: 80vw;
     }
 </style>
-<div class="container">
-    <div class="main-container">
-        <Nav></Nav>
-        <slot></slot>
-    </div>
-</div>
