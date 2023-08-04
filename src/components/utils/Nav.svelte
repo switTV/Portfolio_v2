@@ -6,7 +6,7 @@
 
 <div class="Header">
     <div class="Header-left-section">
-        <a href="#">About Me</a>
+        <a href="/home">About Me</a>
         <a href="/projects">Proyectos</a>
     </div>
     <div class="Header-center-section">
@@ -31,7 +31,7 @@
         </svg>
     </div>
     <div class="Header-right-section">
-        <a href="#">Contacto</a>
+        <a href="/contact">Contacto</a>
     </div>
 </div>
 

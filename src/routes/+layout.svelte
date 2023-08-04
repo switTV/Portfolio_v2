@@ -36,4 +36,11 @@
     .main-container {
         width: 80vw;
     }
+
+    :global(h2) {
+        font-family: "Montserrat";
+        color: #1768ac;
+        font-size: 64px;
+        margin-bottom: 30px;
+    }
 </style>

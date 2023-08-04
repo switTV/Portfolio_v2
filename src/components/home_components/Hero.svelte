@@ -22,6 +22,7 @@
         font-family: "Montserrat";
         color: #1768AC;
         font-size: 64px;
+        margin-bottom: 0;
     }
     
     .Hero .Hero-left-section .Hero-left-section-text p{
