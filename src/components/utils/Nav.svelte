@@ -39,7 +39,7 @@
     .Header {
         display: flex;
         justify-content: space-between;
-        height: 100px;
+        height: 10vh;
         align-items: center;
     }
 

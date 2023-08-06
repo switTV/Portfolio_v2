@@ -16,6 +16,3 @@
 
 <!-- markup (zero or more items) goes here -->
 <Hero></Hero>
-<div class="button_section">
-    <Button {width_button} {text_button} {direction_button}></Button>
-</div>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import img_hero from "../../assets/img-hero.png"
+    import Button from "../utils/Button.svelte";
 
     let mouseX = 0
     let mouseY = 0
@@ -12,10 +13,31 @@
 
 <style>
     .Hero {
-        display: flex;
-        justify-content: space-between;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1.4fr 0.6fr;
+        height: 90vh;
         align-items: center;
-        height: 70vh;
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "Hero-left-section Hero-right-section"
+          "Hero-bottom-section Hero-bottom-section"; 
+    }
+
+    .Hero-left-section { 
+        grid-area: Hero-left-section;
+    }
+    .Hero-right-section {
+        grid-area: Hero-right-section;
+        display: flex;
+        justify-content: end;
+    }
+    .Hero-bottom-section { 
+        grid-area: Hero-bottom-section;
+        display: flex;
+        justify-content: center;
     }
 
     .Hero .Hero-left-section .Hero-left-section-text h2{
@@ -67,5 +89,8 @@
             <div class="Hero-img" style="background-image: url({img_hero}); transform: translate({mouseX / 50}px, {mouseY / 50}px);"></div>
             <div class="Hero-img-bg" style="transform: translate({mouseX / 30}px, {mouseY / 30}px);">i</div>
         </div>
+    </div>
+    <div class="Hero-bottom-section">
+        <Button width_button={460} text_button={"Ir a proyectos!"} direction_button={"/projects"}></Button>
     </div>
 </div>
