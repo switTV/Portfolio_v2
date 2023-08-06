@@ -10,7 +10,7 @@
     .Main {
         display: flex;
         width: 100%;
-        height: 89.3vh;
+        height: 90vh;
         flex-direction: column;
         justify-content: center;
     }

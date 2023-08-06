@@ -26,6 +26,26 @@
         padding: 0;
         box-sizing: border-box;
     }
+    
+    :global(h2) {
+        font-family: "Montserrat";
+        color: #1768ac;
+        font-size: 64px;
+        margin-bottom: 30px;
+    }
+    
+    :global(p) {
+        font-family: "Montserrat";
+        color: #1768ac;
+        font-size: 20px;
+    }
+
+    :global(h3) {
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        color: #03256C;
+    }
 
     .container {
         width: 100vw;
@@ -37,10 +57,4 @@
         width: 80vw;
     }
 
-    :global(h2) {
-        font-family: "Montserrat";
-        color: #1768ac;
-        font-size: 64px;
-        margin-bottom: 30px;
-    }
 </style>

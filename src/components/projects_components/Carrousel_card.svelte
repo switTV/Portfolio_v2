@@ -20,14 +20,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0px 10px 0px 10px;
+        margin: 0px 20px 0px 20px;
         height: 100px;
-    }
-    .card_bottom_section h3 {
-        font-size: 20px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 300;
-        color: #03256C;
     }
     
     .card_top_section {
