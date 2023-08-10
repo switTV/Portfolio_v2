@@ -4,7 +4,7 @@
 
 <style>
     .error_container {
-        height: 85vh;
+        height: 90vh;
 
         display: flex;
         align-items: center;

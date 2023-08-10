@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { IconBrandLinkedin, IconBrandWhatsapp, IconMail } from "@tabler/icons-svelte";
     import Button from "../utils/Button.svelte";
 
     export let card_svg:string
@@ -33,10 +32,7 @@
     }
     
     .Contact_card .top_section p{
-        font-size: 24px;
-        font-family: Montserrat, sans-serif;
         margin-top: 15px;
-        color: #1768AC;
     }
 
     .Contact_card .bottom_section {

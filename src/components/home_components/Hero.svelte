@@ -21,7 +21,7 @@
         grid-auto-columns: 1fr; 
         grid-auto-rows: 1fr; 
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1.4fr 0.6fr;
+        grid-template-rows: 1.5fr 0.5fr;
         height: 90vh;
         align-items: center;
         gap: 0px 0px; 
@@ -49,12 +49,6 @@
         color: #1768AC;
         font-size: 64px;
         margin-bottom: 0;
-    }
-    
-    .Hero .Hero-left-section .Hero-left-section-text p{
-        font-family: "Montserrat";
-        color: #1768AC;
-        font-size: 20px;
     }
 
     .Hero .Hero-right-section .Hero-left-section-img {

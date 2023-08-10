@@ -9,6 +9,7 @@
 <style>
     .Main {
         display: flex;
+        width: 100%;
         flex-direction: column;
         height: 90vh;
         justify-content: center;
