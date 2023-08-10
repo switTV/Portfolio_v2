@@ -9,7 +9,11 @@
         mouseX = event.clientX
         mouseY = event.clientY
     }
+
+    let widthButton = 0
 </script>
+
+<svelte:window bind:innerWidth={widthButton}></svelte:window>
 
 <style>
     .Hero {
@@ -73,6 +77,48 @@
         left: 20px;
         bottom: 20px;
     }
+
+    @media screen and (max-width: 768px) {
+        .Hero {
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-auto-rows: 1fr; 
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              "Hero-left-section"
+              "Hero_right_section"
+              "Hero_bottom_section"; 
+        }
+
+        .Hero-left-section { 
+            grid-area: Hero-left-section;
+            display: flex;
+            justify-content: center;
+        }
+        .Hero-right-section {
+            grid-area: Hero_right_section;
+            display: block;
+        }
+        .Hero-bottom-section {
+            grid-area: Hero_bottom_section;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Hero .Hero-right-section .Hero-left-section-img .Hero-img-bg {
+            display: none;
+        }
+        
+        .Hero .Hero-right-section .Hero-left-section-img .Hero-img {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        
+    }
 </style>
 
 <!-- markup (zero or more items) goes here -->
@@ -87,10 +133,10 @@
     <div class="Hero-right-section">
         <div class="Hero-left-section-img">
             <div class="Hero-img" style="background-image: url({img_hero}); transform: translate({mouseX / 50}px, {mouseY / 50}px);"></div>
-            <div class="Hero-img-bg" style="transform: translate({mouseX / 30}px, {mouseY / 30}px);">i</div>
+            <div class="Hero-img-bg" style="transform: translate({mouseX / 30}px, {mouseY / 30}px);"></div>
         </div>
     </div>
     <div class="Hero-bottom-section">
-        <Button width_button={460} text_button={"Ir a proyectos!"} direction_button={"/projects"}></Button>
+        <Button width_button={widthButton/2.8} text_button={"Ir a proyectos!"} direction_button={"/projects"}></Button>
     </div>
 </div>

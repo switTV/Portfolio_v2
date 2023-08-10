@@ -9,13 +9,32 @@
 <style>
     .Main {
         display: flex;
-        width: 100%;
-        height: 89.3vh;
         flex-direction: column;
+        height: 90vh;
         justify-content: center;
     }
     .Main_cards_container {
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    @media screen and (max-width: 1071px) {
+        .Main {
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            justify-content: left;
+            margin-top: 20px;
+
+        }
+        
+        .Main_cards_container {
+            display: flex;
+            justify-content: left;
+
+        }
     }
 </style>
 

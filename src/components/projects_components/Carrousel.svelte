@@ -33,7 +33,7 @@
             autoplay: true,
 
             breakpoints: {
-                640: {
+                940: {
                     perPage: 1,
                 },
             },
@@ -64,22 +64,20 @@
 </div>
 
 <style>
-    .Carrousel_card {
-        height: 350px;
-    }
 
     .Carrousel {
-        height: 89.2vh;
+        height: 90vh;
         display: flex;
         justify-content: center;
 
         flex-direction: column;
     }
 
-    .Carrousel h2 {
-        font-family: "Montserrat";
-        color: #1768ac;
-        font-size: 64px;
-        margin-bottom: 30px;
+    
+    @media screen and (min-width: 412){
+        .Carrousel h2 {
+            font-size: 12px;
+        }
+        
     }
 </style>

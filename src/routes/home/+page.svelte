@@ -1,17 +1,8 @@
 <script>
     import Hero from "../../components/home_components/Hero.svelte";
-    import Button from "../../components/utils/Button.svelte";
-
-    let width_button = 470
-    let text_button = "Proyectos"
-    let direction_button = "/projects"
 </script>
 
 <style>
-    .button_section {
-        display: flex;
-        justify-content: center;
-    }
 </style>
 
 <!-- markup (zero or more items) goes here -->

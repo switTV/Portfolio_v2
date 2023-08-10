@@ -18,7 +18,7 @@
         font-family: "Montserrat";
         color: #1768AC;
         text-decoration: none;
-        
+        min-width: 220px;
     }
     
     .Button_section a:hover {

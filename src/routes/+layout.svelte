@@ -43,4 +43,14 @@
         font-size: 64px;
         margin-bottom: 30px;
     }
+    
+    @media screen and (max-width: 412px){
+        :global(h2) {
+            font-family: "Montserrat";
+            color: #1768ac;
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+
+    }
 </style>

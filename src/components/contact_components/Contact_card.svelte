@@ -14,11 +14,14 @@
 <style>
     .Contact_card {
         width: 33%;
+        min-width: 250px;
+        max-width: 31%;
         height: 400px;
         border: 2px #03256C solid;
         border-radius: 5px;
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     .Contact_card .top_section {
