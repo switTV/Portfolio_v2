@@ -72,6 +72,10 @@
         bottom: 20px;
     }
 
+    .image_mobile {
+        transform: translate(0, 0);
+    }
+
     @media screen and (max-width: 768px) {
         .Hero {
             display: grid; 
@@ -126,7 +130,7 @@
     </div>
     <div class="Hero-right-section">
         <div class="Hero-left-section-img">
-            <div class="Hero-img" style="background-image: url({img_hero}); transform: translate({mouseX / 50}px, {mouseY / 50}px);"></div>
+            <div class="Hero-img" class:image_mobile={widthButton == 320} style="background-image: url({img_hero}); transform: translate({mouseX / 50}px, {mouseY / 50}px);"></div>
             <div class="Hero-img-bg" style="transform: translate({mouseX / 30}px, {mouseY / 30}px);"></div>
         </div>
     </div>

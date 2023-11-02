@@ -45,7 +45,7 @@
     <h2>Contacto</h2>
     <div class="Main_cards_container">
         <ContactCard card_svg={card_svg1} card_text={"Whatsapp"} card_direction={"#"}></ContactCard>
-        <ContactCard card_svg={card_svg2} card_text={"Gmail"} card_direction={"#"}></ContactCard>
+        <ContactCard card_svg={card_svg2} card_text={"Gmail"} card_direction={"https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDbSXQZjFFCnlrRNNxrDsVXsWgRmHKXcVBrbHMTRPTSfrTqXQNXPdLmXgngjdzbJPkBrXvd"}></ContactCard>
         <ContactCard card_svg={card_svg3} card_text={"Linkedin"} card_direction={"#"}></ContactCard>
     </div>
 </div>
